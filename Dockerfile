@@ -2,8 +2,8 @@
 #
 # docker build -t sequenceiq/hadoop .
 
-FROM sequenceiq/pam:centos-6.5
-MAINTAINER SequenceIQ
+FROM yerly/pam:master-init
+MAINTAINER yerly
 
 USER root
 
@@ -106,4 +106,4 @@ EXPOSE 19888
 #Yarn ports
 EXPOSE 8030 8031 8032 8033 8040 8042 8088
 #Other ports
-EXPOSE 49707 2122   
+EXPOSE 49707 2122
